@@ -1,0 +1,75 @@
+import 'app_localizations.dart';
+
+class AppLocalizationsAr extends AppLocalizations {
+  AppLocalizationsAr() : super('ar');
+
+  @override String get appTitle => 'تطبيقي';
+  @override String get login => 'تسجيل الدخول';
+  @override String get settings => 'الإعدادات';
+  @override String get language => 'اللغة';
+  @override String get arabic => 'العربية';
+  @override String get english => 'الإنجليزية';
+  @override String get accountManagement => 'إدارة الحساب';
+  @override String get email => 'البريد الإلكتروني';
+  @override String get notLinked => 'غير مرتبط';
+  @override String get emailVerification => 'تحقق من البريد الإلكتروني';
+  @override String get privacy => 'الخصوصية';
+  @override String get privacySettings => 'إعدادات الخصوصية';
+  @override String get aboutApp => 'حول التطبيق';
+  @override String get version => 'الإصدار';
+  @override String get deleteAccount => 'حذف الحساب';
+  @override String get confirmDeleteAccount => 'تأكيد حذف الحساب';
+  @override String get logout => 'تسجيل الخروج';
+  @override String get cancel => 'إلغاء';
+  @override String get send => 'حفظ';
+  @override String get delete => 'حذف';
+  @override String get verificationEmailSent => 'تم إرسال البريد للتحقق';
+  @override String get emailAddress => 'البريد الإلكتروني';
+  @override String get password => 'كلمة المرور';
+  @override String get forgotPassword => 'نسيت كلمة المرور؟';
+  @override String get loginWithGoogle => 'تسجيل الدخول باستخدام جوجل';
+  @override String get dontHaveAccount => 'لا تملك حساب؟';
+  @override String get createAccount => 'إنشاء حساب';
+  @override String get home => 'الرئيسية';
+  @override String get create => 'إنشاء';
+  @override String get notifications => 'الإشعارات';
+  @override String get profile => 'الملف الشخصي';
+  @override String get enterEmailFirst => 'الرجاء إدخال البريد الإلكتروني أولاً';
+  @override String get resetPasswordSent => 'تم إرسال رابط إعادة تعيين كلمة المرور';
+  @override String get error => 'حدث خطأ';
+  @override String get loginFailed => 'فشل تسجيل الدخول';
+  @override String get welcomeMessage => 'مرحباً بك';
+  @override String get enterName => 'أدخل الاسم';
+  @override String get enterUsername => 'أدخل اسم المستخدم';
+  @override String get invalidUsername => 'اسم المستخدم غير صالح';
+  @override String get pickBirthDate => 'اختر تاريخ الميلاد';
+  @override String get aboutMe => 'حول نفسك';
+  @override String get changeNameLimit => 'يمكنك تغيير الاسم مرة واحدة كل 7 أيام';
+  @override String get changeUsernameLimit => 'يمكنك تغيير اسم المستخدم مرة واحدة كل 30 يومًا';
+  @override String get profileUpdated => 'تم تحديث الملف الشخصي بنجاح';
+  @override String get report => 'إبلاغ';
+  @override String get commentsTitle => 'التعليقات';
+  @override String get noVideos => 'لا يوجد فيديوهات متاح عرضها الآن';
+  @override String get errorLoadingVideos => 'حدث خطأ أثناء تحميل الفيديوهات';
+  @override String get reportSuccess => 'شكراً لك، تم تسجيل بلاغك وسيتم مراجعة الفيديو فوراً.';
+  @override String get writeComment => 'أكتب تعليقك هنا بكل حب...';
+  @override String get firstCommentHint => 'كن أول من يترك تعليقاً جميلاً! 🚀';
+  @override String get defaultUser => 'مستخدم';
+  
+  // --- ترجمات النصوص المفقودة ---
+  @override String get passwordsDoNotMatch => 'كلمات المرور غير متطابقة';
+  @override String get accountCreated => 'تم إنشاء الحساب بنجاح';
+  @override String get register => 'تسجيل';
+  @override String get fullName => 'الاسم الكامل';
+  @override String get username => 'اسم المستخدم';
+  @override String get confirmPassword => 'تأكيد كلمة المرور';
+  @override String get markedAllAsRead => 'تم تعيين الكل كمقروء';
+  @override String get today => 'اليوم';
+  @override String get likedVideo => 'أعجب بفيديو خاص بك';
+  @override String get fiveMinutesAgo => 'منذ 5 دقائق';
+  @override String get commentedOnVideo => 'علق على الفيديو';
+  @override String get twentyMinutesAgo => 'منذ 20 دقيقة';
+  @override String get thisWeek => 'هذا الأسبوع';
+  @override String get followedYou => 'تابعك';
+  @override String get twoDaysAgo => 'منذ يومين';
+}

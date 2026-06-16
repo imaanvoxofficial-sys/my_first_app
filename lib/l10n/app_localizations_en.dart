@@ -1,0 +1,75 @@
+import 'app_localizations.dart';
+
+class AppLocalizationsEn extends AppLocalizations {
+  AppLocalizationsEn() : super('en');
+
+  @override String get appTitle => 'My App';
+  @override String get login => 'Login';
+  @override String get settings => 'Settings';
+  @override String get language => 'Language';
+  @override String get arabic => 'Arabic';
+  @override String get english => 'English';
+  @override String get accountManagement => 'Account Management';
+  @override String get email => 'Email';
+  @override String get notLinked => 'Not Linked';
+  @override String get emailVerification => 'Email Verification';
+  @override String get privacy => 'Privacy';
+  @override String get privacySettings => 'Privacy Settings';
+  @override String get aboutApp => 'About App';
+  @override String get version => 'Version';
+  @override String get deleteAccount => 'Delete Account';
+  @override String get confirmDeleteAccount => 'Confirm Delete Account';
+  @override String get logout => 'Logout';
+  @override String get cancel => 'Cancel';
+  @override String get send => 'Save';
+  @override String get delete => 'Delete';
+  @override String get verificationEmailSent => 'Verification email sent';
+  @override String get emailAddress => 'Email Address';
+  @override String get password => 'Password';
+  @override String get forgotPassword => 'Forgot Password?';
+  @override String get loginWithGoogle => 'Login with Google';
+  @override String get dontHaveAccount => 'Don\'t have an account?';
+  @override String get createAccount => 'Create Account';
+  @override String get home => 'Home';
+  @override String get create => 'Create';
+  @override String get notifications => 'Notifications';
+  @override String get profile => 'Profile';
+  @override String get enterEmailFirst => 'Please enter email first';
+  @override String get resetPasswordSent => 'Reset link sent';
+  @override String get error => 'Error';
+  @override String get loginFailed => 'Login failed';
+  @override String get welcomeMessage => 'Welcome';
+  @override String get enterName => 'Enter Name';
+  @override String get enterUsername => 'Enter Username';
+  @override String get invalidUsername => 'Invalid Username';
+  @override String get pickBirthDate => 'Pick Birth Date';
+  @override String get aboutMe => 'About Me';
+  @override String get changeNameLimit => 'You can change name every 7 days';
+  @override String get changeUsernameLimit => 'You can change username every 30 days';
+  @override String get profileUpdated => 'Profile updated successfully';
+  @override String get report => 'Report';
+  @override String get commentsTitle => 'Comments';
+  @override String get noVideos => 'No videos available';
+  @override String get errorLoadingVideos => 'Error loading videos';
+  @override String get reportSuccess => 'Thank you, your report has been submitted.';
+  @override String get writeComment => 'Write your comment...';
+  @override String get firstCommentHint => 'Be the first to comment! 🚀';
+  @override String get defaultUser => 'User';
+
+  // --- النصوص المضافة حديثاً ---
+  @override String get passwordsDoNotMatch => 'Passwords do not match';
+  @override String get accountCreated => 'Account created successfully';
+  @override String get register => 'Register';
+  @override String get fullName => 'Full Name';
+  @override String get username => 'Username';
+  @override String get confirmPassword => 'Confirm Password';
+  @override String get markedAllAsRead => 'Marked all as read';
+  @override String get today => 'Today';
+  @override String get likedVideo => 'Liked your video';
+  @override String get fiveMinutesAgo => '5m ago';
+  @override String get commentedOnVideo => 'Commented on your video';
+  @override String get twentyMinutesAgo => '20m ago';
+  @override String get thisWeek => 'This Week';
+  @override String get followedYou => 'Followed you';
+  @override String get twoDaysAgo => '2d ago';
+}
