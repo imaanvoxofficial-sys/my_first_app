@@ -1,58 +1,237 @@
+```html
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>تحميل تطبيق ImaanVox الرسمي</title>
+    <title>ImaanVox | التحميل الرسمي</title>
+
+    <meta name="description" content="قم بتحميل تطبيق ImaanVox الرسمي واستمتع بمشاهدة أفضل المقاطع الدينية والمؤثرة.">
+    <meta name="theme-color" content="#0d6efd">
+
     <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #121214;
-            color: #ffffff;
-            text-align: center;
-            padding: 60px 20px;
-            margin: 0;
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:"Segoe UI",Tahoma,sans-serif;
         }
-        .container {
-            max-width: 500px;
-            margin: auto;
-            background: #1c1c1f;
-            padding: 40px;
-            border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+
+        body{
+            background:linear-gradient(135deg,#0f172a,#111827,#1e293b);
+            color:#fff;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            min-height:100vh;
+            padding:20px;
         }
-        h1 { color: #2196F3; margin-bottom: 20px; }
-        p { font-size: 18px; color: #b3b3b3; line-height: 1.6; margin-bottom: 30px; }
-        .download-btn {
-            display: inline-block;
-            background-color: #2196F3;
-            color: #ffffff;
-            padding: 18px 40px;
-            font-size: 20px;
-            font-weight: bold;
-            text-decoration: none;
-            border-radius: 50px;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(33, 150, 243, 0.4);
+
+        .card{
+            width:100%;
+            max-width:550px;
+            background:rgba(255,255,255,.05);
+            backdrop-filter:blur(12px);
+            border:1px solid rgba(255,255,255,.08);
+            border-radius:25px;
+            padding:40px 30px;
+            text-align:center;
+            box-shadow:0 15px 40px rgba(0,0,0,.45);
         }
-        .download-btn:hover {
-            background-color: #1976D2;
-            transform: translateY(-3px);
-            box-shadow: 0 6px 20px rgba(33, 150, 243, 0.6);
+
+        .logo{
+            width:95px;
+            height:95px;
+            border-radius:24px;
+            margin:auto;
+            background:#2196F3;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            font-size:42px;
+            box-shadow:0 8px 25px rgba(33,150,243,.4);
+        }
+
+        h1{
+            margin-top:20px;
+            font-size:34px;
+            color:#fff;
+        }
+
+        .version{
+            margin-top:8px;
+            color:#8ecbff;
+            font-size:15px;
+        }
+
+        .desc{
+            margin-top:25px;
+            line-height:1.9;
+            color:#d4d4d4;
+            font-size:17px;
+        }
+
+        .download{
+            display:block;
+            margin-top:35px;
+            text-decoration:none;
+            background:#2196F3;
+            color:#fff;
+            padding:18px;
+            border-radius:60px;
+            font-size:21px;
+            font-weight:bold;
+            transition:.3s;
+        }
+
+        .download:hover{
+            transform:translateY(-3px);
+            background:#1976D2;
+        }
+
+        .features{
+            margin-top:35px;
+            display:grid;
+            gap:12px;
+            text-align:right;
+        }
+
+        .item{
+            background:rgba(255,255,255,.05);
+            padding:14px;
+            border-radius:12px;
+        }
+
+        .item span{
+            color:#5db7ff;
+            font-weight:bold;
+        }
+
+        hr{
+            margin:35px 0;
+            border:none;
+            border-top:1px solid rgba(255,255,255,.1);
+        }
+
+        h3{
+            margin-bottom:18px;
+            color:#fff;
+        }
+
+        .socials{
+            display:flex;
+            gap:15px;
+            justify-content:center;
+            flex-wrap:wrap;
+        }
+
+        .btn{
+            flex:1;
+            min-width:170px;
+            text-decoration:none;
+            color:#fff;
+            padding:14px;
+            border-radius:14px;
+            font-weight:bold;
+            transition:.3s;
+        }
+
+        .telegram{
+            background:#229ED9;
+        }
+
+        .twitter{
+            background:#000;
+            border:1px solid #333;
+        }
+
+        .btn:hover{
+            opacity:.85;
+            transform:scale(1.03);
+        }
+
+        .footer{
+            margin-top:30px;
+            color:#8b8b8b;
+            font-size:13px;
+            line-height:1.8;
         }
     </style>
 </head>
+
 <body>
 
-    <div class="container">
-        <h1>ImaanVox</h1>
-        <p>مرحباً بك في المنصة الرسمية لتطبيق إيمان فوكس. يمكنك الآن تحميل النسخة الأحدث مباشرة على هاتفك والاستمتاع بجميع المزايا.</p>
-        
-        <!-- هذا هو الرابط الصحيح من جوجل درايف -->
-        <a href="https://drive.google.com/file/d/1MXysSHUJAZweUeb7Sl11gdi1NJlVpk61/view?usp=sharing" class="download-btn">
-            📥 تحميل التطبيق الآن
-        </a>
+<div class="card">
+
+    <div class="logo">🕌</div>
+
+    <h1>ImaanVox</h1>
+
+    <div class="version">
+        الإصدار الرسمي
     </div>
+
+    <div class="desc">
+        مرحباً بك في الصفحة الرسمية لتحميل تطبيق
+        <strong>ImaanVox</strong>.
+        استمتع بمشاهدة المقاطع الدينية والإيمانية والمؤثرة
+        في تجربة استخدام بسيطة وسريعة وآمنة.
+    </div>
+
+    <a class="download"
+       href="https://docs.google.com/uc?export=download&id=1MXysSHUJAZweUeb7Sl11gdi1NJlVpk61"
+       target="_blank">
+        📥 تحميل التطبيق الآن
+    </a>
+
+    <div class="features">
+
+        <div class="item">
+            <span>✔</span>
+            واجهة سهلة وسريعة.
+        </div>
+
+        <div class="item">
+            <span>✔</span>
+            محتوى ديني وإيماني متجدد.
+        </div>
+
+        <div class="item">
+            <span>✔</span>
+            تحديثات مستمرة وتحسينات دورية.
+        </div>
+
+    </div>
+
+    <hr>
+
+    <h3>تابعنا على منصات التواصل</h3>
+
+    <div class="socials">
+
+        <a href="https://t.me/Imaan_Vox"
+           class="btn telegram"
+           target="_blank"
+           rel="noopener noreferrer">
+            📢 قناة تيليجرام
+        </a>
+
+        <a href="https://x.com/Imaan_Vox"
+           class="btn twitter"
+           target="_blank"
+           rel="noopener noreferrer">
+            ✖ منصة X
+        </a>
+
+    </div>
+
+    <div class="footer">
+        © 2026 ImaanVox<br>
+        جميع الحقوق محفوظة.
+    </div>
+
+</div>
 
 </body>
 </html>
+```
