@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
@@ -7,154 +6,271 @@
     <title>ImaanVox | التحميل الرسمي</title>
 
     <meta name="description" content="قم بتحميل تطبيق ImaanVox الرسمي واستمتع بمشاهدة أفضل المقاطع الدينية والمؤثرة.">
-    <meta name="theme-color" content="#0d6efd">
+    <meta name="theme-color" content="#2196F3">
+
+    <!-- استدعاء خط القاهرة الفاخر وأيقونات Font Awesome -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <style>
-        *{
-            margin:0;
-            padding:0;
-            box-sizing:border-box;
-            font-family:"Segoe UI",Tahoma,sans-serif;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Cairo', "Segoe UI", Tahoma, sans-serif;
         }
 
-        body{
-            background:linear-gradient(135deg,#0f172a,#111827,#1e293b);
-            color:#fff;
-            display:flex;
-            justify-content:center;
-            align-items:center;
-            min-height:100vh;
-            padding:20px;
+        /* خلفية ديناميكية متحركة غنية بالألوان الإيمانية العميقة */
+        body {
+            background: linear-gradient(-45deg, #0f172a, #1e1b4b, #111827, #0f766e);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 25px;
+            overflow-x: hidden;
         }
 
-        .card{
-            width:100%;
-            max-width:550px;
-            background:rgba(255,255,255,.05);
-            backdrop-filter:blur(12px);
-            border:1px solid rgba(255,255,255,.08);
-            border-radius:25px;
-            padding:40px 30px;
-            text-align:center;
-            box-shadow:0 15px 40px rgba(0,0,0,.45);
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
         }
 
-        .logo{
-            width:95px;
-            height:95px;
-            border-radius:24px;
-            margin:auto;
-            background:#2196F3;
-            display:flex;
-            align-items:center;
-            justify-content:center;
-            font-size:42px;
-            box-shadow:0 8px 25px rgba(33,150,243,.4);
+        /* تصميم البطاقة الزجاجية الاحترافية */
+        .card {
+            width: 100%;
+            max-width: 580px;
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 32px;
+            padding: 50px 35px;
+            text-align: center;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5), 
+                        inset 0 1px 0 rgba(255, 255, 255, 0.1);
+            position: relative;
         }
 
-        h1{
-            margin-top:20px;
-            font-size:34px;
-            color:#fff;
+        /* شعار التطبيق المطور وتأثير التوهج */
+        .logo-wrapper {
+            position: relative;
+            width: 110px;
+            height: 110px;
+            margin: 0 auto;
         }
 
-        .version{
-            margin-top:8px;
-            color:#8ecbff;
-            font-size:15px;
+        .logo {
+            width: 100%;
+            height: 100%;
+            border-radius: 28px;
+            background: linear-gradient(135deg, #3b82f6, #06b6d4);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 46px;
+            color: #fff;
+            box-shadow: 0 12px 35px rgba(59, 130, 246, 0.45);
+            transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
         }
 
-        .desc{
-            margin-top:25px;
-            line-height:1.9;
-            color:#d4d4d4;
-            font-size:17px;
+        .card:hover .logo {
+            transform: scale(1.05) rotate(5deg);
         }
 
-        .download{
-            display:block;
-            margin-top:35px;
-            text-decoration:none;
-            background:#2196F3;
-            color:#fff;
-            padding:18px;
-            border-radius:60px;
-            font-size:21px;
-            font-weight:bold;
-            transition:.3s;
+        h1 {
+            margin-top: 25px;
+            font-size: 38px;
+            font-weight: 900;
+            letter-spacing: 0.5px;
+            background: linear-gradient(to left, #ffffff, #93c5fd);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
 
-        .download:hover{
-            transform:translateY(-3px);
-            background:#1976D2;
+        .version {
+            display: inline-block;
+            margin-top: 10px;
+            background: rgba(59, 130, 246, 0.15);
+            color: #60a5fa;
+            padding: 4px 16px;
+            border-radius: 50px;
+            font-size: 14px;
+            font-weight: 600;
+            border: 1px solid rgba(59, 130, 246, 0.2);
         }
 
-        .features{
-            margin-top:35px;
-            display:grid;
-            gap:12px;
-            text-align:right;
+        .desc {
+            margin-top: 25px;
+            line-height: 2;
+            color: #9ca3af;
+            font-size: 16px;
+            font-weight: 400;
         }
 
-        .item{
-            background:rgba(255,255,255,.05);
-            padding:14px;
-            border-radius:12px;
+        .desc strong {
+            background: linear-gradient(to left, #60a5fa, #34d399);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 700;
         }
 
-        .item span{
-            color:#5db7ff;
-            font-weight:bold;
+        /* زر التحميل الخارق والمضيء */
+        .download {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            margin-top: 35px;
+            text-decoration: none;
+            background: linear-gradient(135deg, #2563eb, #1d4ed8);
+            color: #fff;
+            padding: 18px 30px;
+            border-radius: 100px;
+            font-size: 20px;
+            font-weight: 700;
+            box-shadow: 0 10px 25px rgba(37, 99, 235, 0.4),
+                        0 0 0 0 rgba(37, 99, 235, 0.7);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            animation: pulseGlow 2.5s infinite;
         }
 
-        hr{
-            margin:35px 0;
-            border:none;
-            border-top:1px solid rgba(255,255,255,.1);
+        @keyframes pulseGlow {
+            0% { transform: scale(1); box-shadow: 0 10px 25px rgba(37, 99, 235, 0.4), 0 0 0 0 rgba(37, 99, 235, 0.4); }
+            70% { transform: scale(1.02); box-shadow: 0 15px 30px rgba(37, 99, 235, 0.5), 0 0 0 15px rgba(37, 99, 235, 0); }
+            100% { transform: scale(1); box-shadow: 0 10px 25px rgba(37, 99, 235, 0.4), 0 0 0 0 rgba(37, 99, 235, 0); }
         }
 
-        h3{
-            margin-bottom:18px;
-            color:#fff;
+        .download:hover {
+            background: linear-gradient(135deg, #1d4ed8, #1e40af);
+            transform: translateY(-4px);
         }
 
-        .socials{
-            display:flex;
-            gap:15px;
-            justify-content:center;
-            flex-wrap:wrap;
+        .download i {
+            font-size: 22px;
+            transition: transform 0.3s ease;
         }
 
-        .btn{
-            flex:1;
-            min-width:170px;
-            text-decoration:none;
-            color:#fff;
-            padding:14px;
-            border-radius:14px;
-            font-weight:bold;
-            transition:.3s;
+        .download:hover i {
+            transform: translateY(3px);
         }
 
-        .telegram{
-            background:#229ED9;
+        /* تصميم قسم المميزات بشكل شبكي أنيق */
+        .features {
+            margin-top: 40px;
+            display: grid;
+            gap: 14px;
+            text-align: right;
         }
 
-        .twitter{
-            background:#000;
-            border:1px solid #333;
+        .item {
+            background: rgba(255, 255, 255, 0.02);
+            padding: 16px 20px;
+            border-radius: 16px;
+            border: 1px solid rgba(255, 255, 255, 0.04);
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            transition: all 0.3s ease;
         }
 
-        .btn:hover{
-            opacity:.85;
-            transform:scale(1.03);
+        .item:hover {
+            background: rgba(255, 255, 255, 0.05);
+            border-color: rgba(52, 211, 153, 0.2);
+            transform: translateX(-5px);
         }
 
-        .footer{
-            margin-top:30px;
-            color:#8b8b8b;
-            font-size:13px;
-            line-height:1.8;
+        .item i {
+            color: #34d399;
+            font-size: 18px;
+            background: rgba(52, 211, 153, 0.1);
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            flex-shrink: 0;
+        }
+
+        .item-text {
+            font-size: 15px;
+            color: #e5e7eb;
+            font-weight: 600;
+        }
+
+        hr {
+            margin: 40px 0;
+            border: none;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        h3 {
+            margin-bottom: 22px;
+            font-size: 18px;
+            font-weight: 700;
+            color: #f3f4f6;
+            letter-spacing: 0.3px;
+        }
+
+        /* أزرار منصات التواصل الاجتماعي الاحترافية */
+        .socials {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            flex: 1;
+            min-width: 160px;
+            text-decoration: none;
+            color: #fff;
+            padding: 14px 20px;
+            border-radius: 16px;
+            font-weight: 700;
+            font-size: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .telegram {
+            background: linear-gradient(135deg, #0088cc, #24a1de);
+            box-shadow: 0 4px 15px rgba(0, 136, 204, 0.25);
+        }
+
+        .twitter {
+            background: #000000;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(255, 255, 255, 0.1);
+            filter: brightness(1.1);
+        }
+
+        .btn i {
+            font-size: 18px;
+        }
+
+        /* تذييل الصفحة */
+        .footer {
+            margin-top: 40px;
+            color: #6b7280;
+            font-size: 13px;
+            line-height: 1.8;
+            font-weight: 600;
         }
     </style>
 </head>
@@ -163,42 +279,49 @@
 
 <div class="card">
 
-    <div class="logo">🕌</div>
+    <!-- الشعار المطور -->
+    <div class="logo-wrapper">
+        <div class="logo">
+            <i class="fa-solid fa-mosque"></i>
+        </div>
+    </div>
 
     <h1>ImaanVox</h1>
 
     <div class="version">
-        الإصدار الرسمي
+        <i class="fa-solid fa-circle-check" style="font-size: 12px; margin-left: 5px;"></i> الإصدار الرسمي
     </div>
 
     <div class="desc">
-        مرحباً بك في الصفحة الرسمية لتحميل تطبيق
-        <strong>ImaanVox</strong>.
-        استمتع بمشاهدة المقاطع الدينية والإيمانية والمؤثرة
-        في تجربة استخدام بسيطة وسريعة وآمنة.
+        مرحباً بك في الصفحة الرسمية لتحميل تطبيق 
+        <strong>ImaanVox</strong>. 
+        استمتع بمشاهدة المقاطع الدينية والإيمانية والمؤثرة في تجربة استخدام بسيطة، سريعة، وآمنة تماماً.
     </div>
 
-    <a class="download"
-       href="https://docs.google.com/uc?export=download&id=1MXysSHUJAZweUeb7Sl11gdi1NJlVpk61"
+    <!-- زر التحميل المحدث بالرابط الجديد للـ Google Drive -->
+    <a class="download" 
+       href="https://drive.google.com/file/d/1DOGn1lFYHaS6WVNPBe8MWsrIoU_opuDy/view?usp=drive_link" 
        target="_blank">
-        📥 تحميل التطبيق الآن
+        <i class="fa-solid fa-cloud-arrow-down"></i>
+        <span>تحميل التطبيق الآن</span>
     </a>
 
+    <!-- قائمة المميزات العصرية -->
     <div class="features">
 
         <div class="item">
-            <span>✔</span>
-            واجهة سهلة وسريعة.
+            <i class="fa-solid fa-check"></i>
+            <span class="item-text">واجهة مستخدم ذكية، سهلة وسريعة للغاية.</span>
         </div>
 
         <div class="item">
-            <span>✔</span>
-            محتوى ديني وإيماني متجدد.
+            <i class="fa-solid fa-check"></i>
+            <span class="item-text">محتوى ديني وإيماني متجدد ومختار بعناية.</span>
         </div>
 
         <div class="item">
-            <span>✔</span>
-            تحديثات مستمرة وتحسينات دورية.
+            <i class="fa-solid fa-check"></i>
+            <span class="item-text">تحديثات مستمرة لضمان أفضل أداء واستقرار.</span>
         </div>
 
     </div>
@@ -207,26 +330,29 @@
 
     <h3>تابعنا على منصات التواصل</h3>
 
+    <!-- أزرار التواصل الاجتماعي بالأيقونات الحديثة -->
     <div class="socials">
 
-        <a href="https://t.me/Imaan_Vox"
-           class="btn telegram"
-           target="_blank"
+        <a href="https://t.me/Imaan_Vox" 
+           class="btn telegram" 
+           target="_blank" 
            rel="noopener noreferrer">
-            📢 قناة تيليجرام
+            <i class="fa-brands fa-telegram"></i>
+            <span>قناة تيليجرام</span>
         </a>
 
-        <a href="https://x.com/Imaan_Vox"
-           class="btn twitter"
-           target="_blank"
+        <a href="https://x.com/Imaan_Vox" 
+           class="btn twitter" 
+           target="_blank" 
            rel="noopener noreferrer">
-            ✖ منصة X
+            <i class="fa-brands fa-x-twitter"></i>
+            <span>منصة X</span>
         </a>
 
     </div>
 
     <div class="footer">
-        © 2026 ImaanVox<br>
+        &copy; 2026 ImaanVox<br>
         جميع الحقوق محفوظة.
     </div>
 
@@ -234,4 +360,3 @@
 
 </body>
 </html>
-```
