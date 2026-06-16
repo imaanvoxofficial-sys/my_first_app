@@ -42,12 +42,15 @@ dev_dependencies:
 flutter:
   uses-material-design: true
   generate: true
-  # تم حذف قسم الـ assets لمنع خطأ "No file found" 
-  # المكتبة ستجد ملف .env تلقائياً في المجلد الرئيسي
+  
+  # الترتيب الجديد: إدراج المجلدات الفرعية
+  assets:
+    - assets/images/
+    - assets/config/
 
 flutter_launcher_icons:
   android: true
   ios: true
-  image_path: "assets/app_icon.png.png"
+  image_path: "assets/images/app_icon.png"
   adaptive_icon_background: "#121214"
-  adaptive_icon_foreground: "assets/app_icon.png.png"
+  adaptive_icon_foreground: "assets/images/app_icon.png"
