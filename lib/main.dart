@@ -9,7 +9,7 @@ import 'screens/login_screen.dart';
 import 'screens/home_screen.dart'; 
 import 'utils/app_theme.dart';
 import 'package:my_first_app/l10n/app_localizations.dart';
-// 🟢 استيراد ملف سيرفيس الإعلانات الخاص بـ Start.io
+// 🟢 استيراد ملف سيرفيس الإعلانات الذكي الخاص بك
 import 'package:my_first_app/services/ad_service.dart'; 
 
 Future<void> main() async {
@@ -19,11 +19,10 @@ Future<void> main() async {
   // 🔐 تحميل ملف .env المخفي الذي يحتوي على المفاتيح الحساسة
   await dotenv.load(fileName: ".env");
 
-  // 🚀 1. تهيئة نظام إعلانات Start.io لتكون جاهزة للعمل
+  // 🚀 1. تهيئة نظام إعلانات ذكي ونظيف متوافق مع نظامك الحالي
   await AdService().initialize();
   
-  // ⏳ 2. شحن أول إعلان بيني في الخلفية ليكون جاهزاً فوراً للعرض
-  AdService().loadInterstitialAd();
+  // 🟢 (تم حذف السطر القديم loadInterstitialAd هنا لتفادي فشل البناء نهائياً)
 
   // 💾 تهيئة Supabase عبر قراءة البيانات الآمنة من ملف .env
   await Supabase.initialize(
