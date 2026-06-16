@@ -3,6 +3,7 @@ import 'package:supabase_flutter/supabase_flutter.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:timeago/timeago.dart' as timeago;
+import 'package:flutter_dotenv/flutter_dotenv.dart'; // 🟢 استيراد مكتبة حماية البيانات
 
 import 'screens/login_screen.dart';
 import 'screens/home_screen.dart'; 
@@ -15,16 +16,19 @@ Future<void> main() async {
   // التأكد من تهيئة Flutter قبل أي شيء
   WidgetsFlutterBinding.ensureInitialized();
 
+  // 🔐 تحميل ملف .env المخفي الذي يحتوي على المفاتيح الحساسة
+  await dotenv.load(fileName: ".env");
+
   // 🚀 1. تهيئة نظام إعلانات Start.io لتكون جاهزة للعمل
   await AdService().initialize();
   
   // ⏳ 2. شحن أول إعلان بيني في الخلفية ليكون جاهزاً فوراً للعرض
   AdService().loadInterstitialAd();
 
-  // تهيئة Supabase بالبيانات الحقيقية للمشروع
+  // 💾 تهيئة Supabase عبر قراءة البيانات الآمنة من ملف .env
   await Supabase.initialize(
-    url: 'https://huzfuutltdsdljgbmrnw.supabase.co',
-    anonKey: 'sb_publishable_BxzxkBPnL0tjQP5lJO2lmA_Xcan1CK8',
+    url: dotenv.env['SUPABASE_URL']!,
+    anonKey: dotenv.env['SUPABASE_ANON_KEY']!,
   );
 
   // إعداد لغة الوقت للعربية
